@@ -79,9 +79,8 @@ ALTER TABLE
 
 General:
 VSCode with the following extensions:
-
--- https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools
--- https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode
+- https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools
+- https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode
 
 
 Windows Specific:
