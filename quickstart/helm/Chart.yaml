@@ -1,0 +1,11 @@
+apiVersion: v2
+name: ort-devstack
+description: Helm chart to deploy the ortelius local devstack with subcharts
+type: application
+version: 1.0.0
+appVersion: 0.0.1
+
+dependencies:
+  - name: ort-postgres
+    version: "0.1.0"
+    

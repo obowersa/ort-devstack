@@ -1,0 +1,7 @@
+apiVersion: v2
+name: ort-postgres
+description: Deploys the ortelius test database with a persistent volume claim
+type: application
+
+version: 0.1.0
+appVersion: 0.1.0
