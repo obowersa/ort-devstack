@@ -23,9 +23,9 @@ Kubectl: https://kubernetes.io/docs/tasks/tools/
 Helm: https://helm.sh/
 
 # Steps
-- kind create cluster --config=./kind/config/base.yaml
+- Create the local k8s cluster
 ```
-> kind create cluster --config=./kind/config/base.yaml
+> kind create cluster --config=./kind/config/kind-base.yaml
 Creating cluster "kind" ...
  ✓ Ensuring node image (kindest/node:v1.19.1) 🖼
  ✓ Preparing nodes 📦
@@ -47,7 +47,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 - Deploy the ortelius devstack:
 ```
-> kind create cluster --config=./kind/config/kind-base.yaml
+> helm install ort-devstack ./helm/
 ```
 
 - Once deployed, you will need to wait for the containers to come up. Postgres in paticular can take a bit of time while it does the database insert. In the logs, you will be waiting for it to report 'listening on IPV4*'  To check on this you can run:
